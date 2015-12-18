@@ -2,13 +2,13 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         xmlns:android = "http://schemas.android.com/apk/res/android"
-        id        = "com.moodle.moodlemobile"
+        id        = "tz.ac.udsm.cvl.moodlemobile"
         versionCode = "2007"
-        version   = "2.6">
-    <name>Moodle Mobile</name>
+        version   = "1.0">
+    <name>UDSM Moodle Mobile</name>
 
     <description>
-        Moodle Mobile official app
+        UDSM Moodle Mobile customized app
     </description>
 
     <author href="http://moodle.com" email="mobile@moodle.com">
