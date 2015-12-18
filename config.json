@@ -9,5 +9,6 @@
     "wsextservice" : "local_mobile",
     "presets" : {"url": "http://lms.udsm.ac.tz", "username": ""},
     "default_login": "http://lms.udsm.ac.tz",
+    "siteurl": "http://lms.udsm.ac.tz",
     "gcmpn": "694767596569"
 }
