@@ -5,10 +5,10 @@
         id        = "tz.ac.udsm.cvl.moodlemobile"
         versionCode = "2007"
         version   = "1.0">
-    <name>UDSM Moodle Mobile</name>
+    <name>UDSM Mobile LMS</name>
 
     <description>
-        UDSM Moodle Mobile customized app
+        UDSM Mobile LMS customized app
     </description>
 
     <author href="http://moodle.com" email="mobile@moodle.com">
