@@ -43,26 +43,26 @@ angular.module('mm.core.login', [])
         onEnter: function($state, $mmSitesManager) {
             // Skip this page if there are no sites yet.
             $mmSitesManager.hasNoSites().then(function() {
-                $state.go('mm_login.site');
+                $state.go('mm_login.credentials');
             });
         }
     })
 
-    .state('mm_login.site', {
+    /*.state('mm_login.site', {
         url: '/site',
         templateUrl: 'core/components/login/templates/site.html',
         controller: 'mmLoginSiteCtrl',
         onEnter: function($state) {
             $state.go('mm_login.credentials', {siteurl: 'http://lms.udsm.ac.tz'});
         }
-    })
+    })*/
 
     .state('mm_login.credentials', {
         url: '/cred',
         templateUrl: 'core/components/login/templates/credentials.html',
         controller: 'mmLoginCredentialsCtrl',
         params: {
-            siteurl: ''
+            siteurl: 'http://lms.udsm.ac.tz'
         },
         onEnter: function($state, $stateParams) {
             // Do not allow access to this page when the URL was not passed.
