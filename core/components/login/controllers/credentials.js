@@ -23,7 +23,8 @@ angular.module('mm.core.login')
  */
 .controller('mmLoginCredentialsCtrl', function($scope, $state, $stateParams, $mmSitesManager, $mmUtil, $ionicHistory, $mmApp) {
 
-    $scope.siteurl = $stateParams.siteurl;
+    //$scope.siteurl = $stateParams.siteurl;
+    $scope.siteurl = 'http://lms.udsm.ac.tz';
     $scope.credentials = {};
 
     $scope.login = function() {

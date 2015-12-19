@@ -48,14 +48,14 @@ angular.module('mm.core.login', [])
         }
     })
 
-    .state('mm_login.site', {
+    /*.state('mm_login.site', {
         url: '/site',
         templateUrl: 'core/components/login/templates/site.html',
         controller: 'mmLoginSiteCtrl',
         onEnter: function($state) {
             $state.go('mm_login.credentials');
         }
-    })
+    })*/
 
     .state('mm_login.credentials', {
         url: '/cred',

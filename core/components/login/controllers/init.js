@@ -39,7 +39,7 @@ angular.module('mm.core.login')
             $mmSitesManager.hasSites().then(function() {
                 return $state.go('mm_login.sites');
             }, function() {
-                return $state.go('mm_login.site');
+                return $state.go('mm_login.credentials');
             });
         }
     });

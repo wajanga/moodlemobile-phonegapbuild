@@ -51,7 +51,7 @@ angular.module('mm.core.login')
                     $scope.sites.splice(index, 1);
                     $mmSitesManager.hasNoSites().then(function() {
                         $ionicHistory.nextViewOptions({disableBack: true});
-                        $state.go('mm_login.site');
+                        $state.go('mm_login.credentials');
                     });
                 }, function(error) {
                     $log.error('Delete site failed');
@@ -77,7 +77,7 @@ angular.module('mm.core.login')
     };
 
     $scope.add = function() {
-        $state.go('mm_login.site');
+        $state.go('mm_login.credentials');
     };
 
 });
