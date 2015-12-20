@@ -26,7 +26,6 @@ angular.module('mm.core.login')
 
     $scope.siteurl = 'lms.udsm.ac.tz';
     $scope.isInvalidUrl = true;
-    $scope.disableSiteChange = true;
 
     $scope.validate = function(url) {
         if (!url) {
