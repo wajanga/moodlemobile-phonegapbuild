@@ -34,7 +34,10 @@ angular.module('mm.core.login', [])
         url: '/init',
         templateUrl: 'core/components/login/templates/init.html',
         controller: 'mmLoginInitCtrl',
-        cache: false // Disable caching to force controller reload.
+        cache: false, // Disable caching to force controller reload.
+        onEnter: function() {
+            $state.go('mm_login.credentials');
+        }
     })
 
     .state('mm_login.sites', {
@@ -43,9 +46,10 @@ angular.module('mm.core.login', [])
         controller: 'mmLoginSitesCtrl',
         onEnter: function($state, $mmSitesManager) {
             // Skip this page if there are no sites yet.
-            $mmSitesManager.hasNoSites().then(function() {
+            /*$mmSitesManager.hasNoSites().then(function() {
                 $state.go('mm_login.credentials');
-            });
+            });*/
+            $state.go('mm_login.credentials');
         }
     })
 
