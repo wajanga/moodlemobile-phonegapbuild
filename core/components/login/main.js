@@ -63,13 +63,13 @@ angular.module('mm.core.login', [])
         controller: 'mmLoginCredentialsCtrl',
         params: {
             siteurl: 'http://lms.udsm.ac.tz'
-        },
-        onEnter: function($state, $stateParams) {
+        }
+        /*onEnter: function($state, $stateParams) {
             // Do not allow access to this page when the URL was not passed.
             if (!$stateParams.siteurl) {
               $state.go('mm_login.init');
             }
-        }
+        }*/
     })
 
     .state('mm_login.reconnect', {

@@ -37,7 +37,8 @@ angular.module('mm.core.login')
             $state.go('site.mm_courses');
         } else {
             $mmSitesManager.hasSites().then(function() {
-                return $state.go('mm_login.sites');
+                //return $state.go('mm_login.sites');
+                return $state.go('mm_login.credentials');
             }, function() {
                 return $state.go('mm_login.credentials');
             });
