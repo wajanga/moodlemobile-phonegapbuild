@@ -36,12 +36,13 @@ angular.module('mm.core.login')
         if ($mmSite.isLoggedIn()) {
             $state.go('site.mm_courses');
         } else {
-            $mmSitesManager.hasSites().then(function() {
+          $state.go('mm_login.credentials');
+            /*$mmSitesManager.hasSites().then(function() {
                 //return $state.go('mm_login.sites');
                 return $state.go('mm_login.credentials');
             }, function() {
                 return $state.go('mm_login.credentials');
-            });
+            });*/
         }
     });
 
