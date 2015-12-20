@@ -115,7 +115,8 @@ angular.module('mm.core.login', [])
         // Prevent state changes while the app is not ready.
         if (!$mmApp.isReady() && toState.name !== 'mm_login.init') {
             event.preventDefault();
-            $state.transitionTo('mm_login.init');
+            //$state.transitionTo('mm_login.init');
+            $state.transitionTo('mm_login.credentials');
             $log.warn('Forbidding state change to \'' + toState.name + '\'. App is not ready yet.');
             return;
         }
