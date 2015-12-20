@@ -5,7 +5,7 @@
         id        = "tz.ac.udsm.cvl.moodlemobile"
         versionCode = "2015"
         version   = "1.0">
-    <name>UDSM LMS</name>
+    <name>UDSM Mobile LMS</name>
 
     <description>
         UDSM Moodle Mobile app
