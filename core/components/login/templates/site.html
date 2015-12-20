@@ -8,10 +8,10 @@
         <form>
           <label class="item item-input item-stacked-label">
             <span class="input-label">{{ 'mm.login.siteaddress' | translate }}</span>
-            <input type="url" placeholder="moodle.org" ng-model="siteurl" mm-no-input-validation ng-change="validate(siteurl)" mm-auto-focus ng-init="siteurl='lms.udsm.ac.tz'" >
+            <input type="url" placeholder="moodle.org" ng-model="siteurl" mm-no-input-validation ng-change="validate(siteurl)" mm-auto-focus ng-init="siteurl='lms.udsm.ac.tz'" ng-disabled="disableSiteChange" >
           </label>
           <div class="item">
-              <button class="button button-block" ng-click="connect(siteurl)" ng-disabled="isInvalidUrl">{{ 'mm.login.connect' | translate }}</button>
+              <button class="button button-block" ng-click="connect(siteurl)">{{ 'mm.login.connect' | translate }}</button>
               <!-- <input type="submit" class="button button-block" value="{{ 'mm.login.connect' | translate }}" > -->
           </div>
         </form>
