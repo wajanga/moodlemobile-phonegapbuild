@@ -2,9 +2,9 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         xmlns:android = "http://schemas.android.com/apk/res/android"
-        id        = "com.moodle.moodlemobile"
-        versionCode = "2007"
-        version   = "2.6">
+        id        = "tz.ac.udsm.cvl.moodlemobile"
+        versionCode = "2015"
+        version   = "1.0">
     <name>Moodle Mobile</name>
 
     <description>
